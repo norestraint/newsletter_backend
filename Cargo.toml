@@ -17,6 +17,9 @@ actix-web = "4.3.1"
 config = "0.13.3"
 serde = { version = "1", features = ["derive"]}
 
+uuid = { version = "0.8.1", features = ["v4"] }
+chrono = "0.4.15"
+
 # Using table-like toml syntax to avoid a super-long line!
 [dependencies.sqlx]
 version = "0.5.7"
