@@ -14,7 +14,7 @@ name = "zero2prod"
 [dependencies]
 actix-http = "3.3.1"
 actix-web = "4.3.1"
-config = "0.13.3"
+config = { version = "0.13", default-features = false, features = ["yaml"] }
 serde = { version = "1", features = ["derive"]}
 
 uuid = { version = "0.8.1", features = ["v4"] }
@@ -36,7 +36,8 @@ features = [
   "postgres",
   "uuid",
   "chrono",
-  "migrate"
+  "migrate",
+  "offline"
 ]
 
 [dev-dependencies]
