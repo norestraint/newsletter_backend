@@ -9,12 +9,6 @@ impl AsRef<str> for SubscriberName {
     }
 }
 
-#[derive(Debug)]
-pub struct NewSubscriber {
-    pub email: String,
-    pub name: SubscriberName,
-}
-
 impl SubscriberName {
     pub fn parse(s: String) -> Result<SubscriberName, String> {
         let is_empty_or_whitespace = s.trim().is_empty();
